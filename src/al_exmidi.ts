@@ -55,7 +55,7 @@ import {
 enable_debug("debug");
 
 async function main() {
-  let the_music: MIDI | null;
+  let the_music: MIDI | null = null;
   let length = 0,
     pos = 0;
   let beats = 0,
@@ -65,7 +65,7 @@ async function main() {
     tw = 0,
     th = 0;
   let background_color = 0;
-  let text_color;
+  let text_color = 0;
   let paused = false;
   let done = 0;
 

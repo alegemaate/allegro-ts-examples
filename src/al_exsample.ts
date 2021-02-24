@@ -49,14 +49,13 @@ import {
   textprintf_centre_ex,
   digi_driver,
   init_allegro_ts,
-  allegro_ready,
   enable_debug,
 } from "allegro-ts";
 
 async function main() {
   enable_debug("debug");
 
-  let the_sample: SAMPLE;
+  let the_sample: SAMPLE | null = null;
   let pan = 128;
   let pitch = 1000;
 

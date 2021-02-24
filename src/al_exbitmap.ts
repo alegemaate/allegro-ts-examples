@@ -35,8 +35,8 @@ import {
 enable_debug("debug");
 
 async function main() {
-  let argv = ["", "assets/man.png"];
-  let the_image!: BITMAP;
+  const argv = ["", "assets/man.png"];
+  let the_image: BITMAP | null = null;
   let the_palette!: RGB;
 
   if (allegro_init() != 0) return 1;

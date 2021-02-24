@@ -28,10 +28,10 @@ import {
 } from "allegro-ts";
 
 let num = 0;
-const x: any[] = [];
-const y: any[] = [];
-const vx: any[] = [];
-const vy: any[] = [];
+const x: number[] = [];
+const y: number[] = [];
+const vx: number[] = [];
+const vy: number[] = [];
 let last_time = 0;
 let buffer!: BITMAP;
 let bmp!: BITMAP;
@@ -49,7 +49,7 @@ async function main() {
   while (!key[KEY_ESC]) {
     clear_to_color(buffer, makecol(255, 255, 255));
 
-    for (var c = 0; c < num; c++) {
+    for (let c = 0; c < num; c++) {
       draw_sprite(buffer, bmp, x[c], y[c]);
       if (x[c] + vx[c] > SCREEN_W) {
         vx[c] = -abs(vx[c]);
@@ -72,7 +72,7 @@ async function main() {
     vx.push(frand() * 2 - 1);
     vy.push(frand() * 2 - 1);
     num++;
-    var msec = Date.now() - last_time;
+    const msec = Date.now() - last_time;
     textprintf_ex(
       buffer,
       font,

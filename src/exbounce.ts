@@ -44,17 +44,17 @@ let clouds!: BITMAP;
 let ball!: BITMAP;
 
 // sample object
-var bounce!: SAMPLE;
+let bounce!: SAMPLE;
 
 // size and speed of the ball
-var speed = 5;
+const speed = 5;
 
 // positon of the ball
-var cx = 100,
+let cx = 100,
   cy = 100;
 
 // velocity of the ball
-var vx = speed,
+let vx = speed,
   vy = speed;
 
 // drawing function
@@ -92,7 +92,7 @@ function draw() {
 // update game logic
 function update() {
   // did the ball bounce off the wall this turn?
-  var bounced = false;
+  let bounced = false;
 
   // if the ball is going to collide with screen bounds
   // after applying velocity, if so, reverse velocity

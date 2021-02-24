@@ -56,15 +56,15 @@ async function main() {
   let windowed: number;
   let data;
 
-  let title: string;
-  let filename: string;
+  let title = "";
+  let filename = "";
   let r: number;
   let g: number;
   let b: number;
 
-  let background: BITMAP;
+  let background: BITMAP | null = null;
   let display: number;
-  let pal: RGB = {
+  const pal: RGB = {
     r: 0,
     g: 0,
     b: 0,

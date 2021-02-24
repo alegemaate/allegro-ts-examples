@@ -26,6 +26,5 @@
   },
   "dependencies": {
     "allegro-ts": "^1.0.0-2"
-    
   }
 }

@@ -44,7 +44,7 @@ import {
 enable_debug("debug");
 
 async function main() {
-  let buffer: BITMAP;
+  let buffer: BITMAP | null = null;
   let c: number;
 
   if (allegro_init() != 0) return 1;

@@ -47,9 +47,9 @@ import {
 enable_debug("debug");
 
 /* these must be declared volatile so the optimiser doesn't mess up */
-let x: number = 0;
-let y: number = 0;
-let z: number = 0;
+let x = 0;
+let y = 0;
+let z = 0;
 
 /* timer interrupt handler */
 function inc_x() {

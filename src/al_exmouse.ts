@@ -72,8 +72,8 @@ async function print_all_buttons() {
   const bc = makecol(255, 255, 255);
   textprintf_right_ex(screen, font, 320, 50, fc, bc, "buttons");
   for (i = 0; i < 8; i++) {
-    let x: number = 320;
-    let y: number = 60 + i * 10;
+    const x = 320;
+    const y = 60 + i * 10;
     if (mouse_b & (1 << i))
       textprintf_right_ex(screen, font, x, y, fc, bc, "%2d", 1 + i);
     else textprintf_right_ex(screen, font, x, y, fc, bc, "  ");
@@ -81,10 +81,10 @@ async function print_all_buttons() {
 }
 
 async function main() {
-  let mickeyx: number = 0;
-  let mickeyy: number = 0;
-  let custom_cursor: BITMAP;
-  let c: number = 0;
+  const mickeyx = 0;
+  const mickeyy = 0;
+  let custom_cursor: BITMAP | null = null;
+  let c = 0;
 
   if (allegro_init() != 0) return 1;
   install_keyboard();

@@ -33,7 +33,6 @@ import {
   rectfill,
   textprintf_ex,
   END_OF_FUNCTION,
-  scancode_to_name,
   install_timer,
   GFX_AUTODETECT,
   GFX_SAFE,
@@ -69,7 +68,6 @@ import {
   KEY_ESC,
   key,
   clear_keybuf,
-  keypressed,
   rest,
   KEY_MAX,
   keyboard_driver,
@@ -211,11 +209,11 @@ const key_names = [
  * the callback. Don't do this in your own programs ;)
  */
 function keypress_handler(scancode: number) {
-  let str = "";
-  let i = scancode & 0x7f;
-  let x = SCREEN_W - 100 * 3 + (i % 3) * 100;
-  let y = SCREEN_H / 2 + (i / 3 - 21) * 10;
-  let color = scancode & 0x80 ? makecol(255, 255, 0) : makecol(128, 0, 0);
+  const str = "";
+  const i = scancode & 0x7f;
+  const x = SCREEN_W - 100 * 3 + (i % 3) * 100;
+  const y = SCREEN_H / 2 + (i / 3 - 21) * 10;
+  const color = scancode & 0x80 ? makecol(255, 255, 0) : makecol(128, 0, 0);
   rectfill(screen, x, y, x + 95, y + 8, color);
   textprintf_ex(screen, font, x + 1, y + 1, makecol(0, 0, 0), -1, "%s", str);
 }

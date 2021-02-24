@@ -89,10 +89,10 @@ function update_image(image: IMAGE) {
 
 async function main() {
   const buf = "assets/mysha.png";
-  let pal: RGB = { r: 0, b: 0, g: 0 };
-  let image: BITMAP;
+  const pal: RGB = { r: 0, b: 0, g: 0 };
+  let image: BITMAP | null = null;
   const page: BITMAP[] = [];
-  let vimage: BITMAP;
+  let vimage: BITMAP | null = null;
 
   const images: IMAGE[] = [];
   let num_images = 4;
