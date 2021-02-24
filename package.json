@@ -25,6 +25,6 @@
     "webpack-cli": "^4.5.0"
   },
   "dependencies": {
-    "allegro-ts": "^1.0.0-2"
+    "allegro-ts": "latest"
   }
 }

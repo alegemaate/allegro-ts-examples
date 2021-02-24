@@ -374,10 +374,10 @@ ajv@^7.0.2:
     require-from-string "^2.0.2"
     uri-js "^4.2.2"
 
-allegro-ts@^1.0.0-2:
-  version "1.0.0-2"
-  resolved "https://registry.yarnpkg.com/allegro-ts/-/allegro-ts-1.0.0-2.tgz#d97e0e9ca5d00b556e210ea9d411c298167712c7"
-  integrity sha512-R4TbXoUJwRRB5308cODm6ZqO60GVZsIiVqAnJNbG2LuFnBRRrH+6asFwIPCIOFXw1lTQ9pR2vzuhhETuOJbZyQ==
+allegro-ts@latest:
+  version "1.0.0-1"
+  resolved "https://registry.yarnpkg.com/allegro-ts/-/allegro-ts-1.0.0-1.tgz#9e52c4cd7eaa62d09dbabd64c9c4ae099fcdf6b0"
+  integrity sha512-4xagE8f+eBKmIfmTRF910DQI3rAo/2kiicvkuVjhmMxeNVG5vOgsns4c1aBfPP126UELTeIAcP/99leHk292MA==
 
 ansi-colors@^4.1.1:
   version "4.1.1"

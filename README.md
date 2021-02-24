@@ -39,7 +39,3 @@ yarn build
 - [Python Turtle](https://alegemaate.com/allegro-ts-examples/exturtle)
 - [Save Bitmap](https://alegemaate.com/allegro-ts-examples/exsavebmp)
 - [Stress Test](https://alegemaate.com/allegro-ts-examples/stress)
-
-```
-
-```
