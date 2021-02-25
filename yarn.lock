@@ -360,9 +360,9 @@ ajv@^7.0.2:
     uri-js "^4.2.2"
 
 allegro-ts@next:
-  version "1.0.0-2"
-  resolved "https://registry.yarnpkg.com/allegro-ts/-/allegro-ts-1.0.0-2.tgz#d97e0e9ca5d00b556e210ea9d411c298167712c7"
-  integrity sha512-R4TbXoUJwRRB5308cODm6ZqO60GVZsIiVqAnJNbG2LuFnBRRrH+6asFwIPCIOFXw1lTQ9pR2vzuhhETuOJbZyQ==
+  version "1.0.0-3"
+  resolved "https://registry.yarnpkg.com/allegro-ts/-/allegro-ts-1.0.0-3.tgz#5865cc13eb6b8d41e8444e124941a171cc8effbc"
+  integrity sha512-hZIQ3cfZ2Q7hcJ8UpuTbx3WOAHkFW/ALmyyKqGzk/2pMEVAEMfSLNczhekJupjwR4LMqlw5IVxGpPLmEUIcC7Q==
 
 ansi-colors@^4.1.1:
   version "4.1.1"

@@ -15,7 +15,6 @@ import {
   screen,
   allegro_init,
   allegro_message,
-  atoi,
   BITMAP,
   blit,
   clear_bitmap,
@@ -99,9 +98,9 @@ async function main() {
     h = 200;
     bpp = 8;
   } else {
-    w = atoi(data[0]);
-    h = atoi(data[1]);
-    bpp = atoi(data[2]);
+    w = parseInt(data[0], 10);
+    h = parseInt(data[1], 10);
+    bpp = parseInt(data[2], 10);
   }
 
   /* Should we use a windowed mode?
@@ -134,9 +133,9 @@ async function main() {
     );
     r = g = b = 255;
   } else {
-    r = atoi(data[0]);
-    g = atoi(data[1]);
-    b = atoi(data[2]);
+    r = parseInt(data[0], 10);
+    g = parseInt(data[1], 10);
+    b = parseInt(data[2], 10);
   }
 
   /* The image file to read
