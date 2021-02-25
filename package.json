@@ -16,7 +16,6 @@
     "copy-webpack-plugin": "^7.0.0",
     "eslint": "^7.19.0",
     "eslint-config-prettier": "^8.1.0",
-    "eslint-plugin-tsdoc": "^0.2.11",
     "html-webpack-plugin": "^5.2.0",
     "prettier": "^2.2.1",
     "ts-loader": "^8.0.17",
@@ -25,6 +24,6 @@
     "webpack-cli": "^4.5.0"
   },
   "dependencies": {
-    "allegro-ts": "latest"
+    "allegro-ts": "next"
   }
 }
